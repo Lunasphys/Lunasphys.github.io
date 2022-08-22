@@ -95,7 +95,7 @@ li {
 }
 
 .icon {
-    width: 3vh;
+    width: 2.8vh;
     margin-right: 15px;
 }
 
@@ -109,7 +109,7 @@ li {
 }
 
 .information li {
-    margin : 10px 0 10px 0;
+    margin : 8px 0 8px 0;
     align-items: center;
 }
 
@@ -239,4 +239,13 @@ li {
 
 .four:hover .caption_pres {
     opacity: 1;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline white;
 }
