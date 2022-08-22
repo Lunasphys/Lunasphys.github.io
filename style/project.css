@@ -301,3 +301,9 @@ h2 {
 .four:hover .caption_pres {
     opacity: 1;
 }
+
+.pres_projet:hover {
+    filter: blur(2px);
+    width: 22.5vh;
+    transition: .3s ease;
+}
