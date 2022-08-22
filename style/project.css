@@ -1,0 +1,299 @@
+@font-face {
+    font-family: 'slkscrb';
+    src: url("../slkscr.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'arimob';
+    src: url("../arimo_bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'arimor';
+    src: url("../arimo_regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'arcade';
+    src: url("../arimo_regular.ttf") format("truetype");
+}
+
+body {
+    border: 0;
+    padding: 0;
+    background: no-repeat url("../img/fond_projets.png") center center fixed;
+    background-size: cover;
+    color: white;
+}
+.title {
+    margin: 10vh 0 8vh 0;
+    text-align: center;
+}
+
+h1 {
+    font-family: slkscrb, serif;
+    font-size: 125px;
+}
+
+h2 {
+    font-family: slkscrb, serif;
+    font-size: 70px;
+}
+
+
+.projects_case {
+    display: flex;
+    justify-content: center;
+}
+
+.pres_projet {
+    margin: 0px 25px 0px 25px;
+    width: 22vh;
+}
+
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+    visibility: hidden;
+    width: 130vh;
+    height: 70vh;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 100px;
+    padding: 8px 0;
+    position: fixed;
+    opacity:0.95;
+    left: 18.25vw;
+    top: 14vh;
+    z-index: 1;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+    visibility: visible;
+    animation: fadeIn 1s;
+}
+
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:0.95 ;}
+}
+.title_popup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6vh;
+}
+
+
+.first_square {
+    display: flex;
+    justify-content: center;
+    gap: 14vh;
+}
+
+.second_square {
+    display: flex;
+    justify-content: center;
+    font-family: arimob, serif;
+    font-size: 23px;
+    gap: 14vh;
+    margin-left: 20vh;
+}
+
+
+.text_pres {
+    width: 90vh;
+    font-family: arimob, serif;
+    font-size: 20px;
+    text-align: justify;
+}
+.text_pres_hangman {
+    width: 90vh;
+    font-family: arimob, serif;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.github_link {
+    font-family: arimob, serif;
+    font-size: 23px;
+}
+
+.github_link p {
+    margin-bottom: 8px;
+}
+
+.icon_gith {
+    width: 7vh;
+    opacity: 1;
+}
+
+.logo_tidder {
+    width: 5%
+}
+
+.tidder_img {
+    width: 70vh;
+}
+
+.logo {
+    width: 15%;
+}
+
+.technologies {
+    margin-top: 5%;
+}
+
+.redproject_img {
+    width: 90vh;
+}
+
+#img_hangman {
+    width: 60vh;
+}
+
+.logo_one {
+    width: 32%;
+}
+
+.redirection {
+    position: fixed;
+    width: 130px;
+    height: 130px;
+    top: 5vh;
+    right: 2vw;
+}
+
+.cross {
+    width: 2vw;
+}
+
+.right_cross {
+    position: absolute;
+    left: 35px;
+}
+
+.bottom_cross {
+    position: absolute;
+    bottom: 7px;
+}
+
+.left_cross {
+    position: absolute;
+    right: 130px;
+}
+
+.cross_up:hover {
+    width: 18vw;
+}
+
+.hidden_up {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 25.5vw;
+    top: 45.5vh;
+    text-align: center;
+
+}
+
+.cross {
+    transition: transform .7s ease-in-out;
+}
+.cross:hover {
+    transform: rotate(180deg);
+}
+
+.caption {
+    transition: .5s ease;
+    position: absolute;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 15px;
+    top: 17px;
+    left: 80px;
+    color: white;
+    font-family: slkscrb, serif;
+
+}
+
+.one:hover .caption {
+    opacity: 1;
+}
+
+.caption_contact {
+    transition: .5s ease;
+    position: absolute;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 15px;
+    top: 60px;
+    left: 115px;
+    color: white;
+    font-family: slkscrb, serif;
+
+}
+
+.two:hover .caption_contact {
+    opacity: 1;
+}
+
+.caption_stage {
+    transition: .5s ease;
+    position: absolute;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 15px;
+    top: 105px;
+    right: 110px;
+    color: white;
+    font-family: slkscrb, serif;
+
+}
+
+.three:hover .caption_stage {
+    opacity: 1;
+}
+
+.caption_pres {
+    transition: .5s ease;
+    position: absolute;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 15px;
+    top: 60px;
+    right: 115px;
+    color: white;
+    font-family: slkscrb, serif;
+
+}
+
+.four:hover .caption_pres {
+    opacity: 1;
+}
