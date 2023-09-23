@@ -27,3 +27,8 @@ function myFunction6() {
     var popup = document.getElementById("myPopup6");
     popup.classList.toggle("show");
 }
+
+function myFunction7() {
+    var popup = document.getElementById("myPopup7");
+    popup.classList.toggle("show");
+}
