@@ -40,3 +40,8 @@ function myFunction9() {
     var popup = document.getElementById("myPopup9");
     popup.classList.toggle("show");
 }
+
+function myFunction10() {
+    var popup = document.getElementById("myPopup10");
+    popup.classList.toggle("show");
+}

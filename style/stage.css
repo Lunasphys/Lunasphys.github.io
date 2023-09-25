@@ -17,7 +17,7 @@
 body {
     border: 0;
     padding: 0;
-    background: no-repeat url("../img/fond_stage.png") center center fixed;
+    background: no-repeat url("../img/stagefond.png") center center fixed;
     background-size: cover;
     color: white;
 }
@@ -31,6 +31,12 @@ body {
 h1 {
     font-family: slkscrb, serif;
     font-size: 109px;
+    margin: 0;
+}
+
+h2 {
+    font-family: slkscrb, serif;
+    font-size: 100px;
     margin: 0;
 }
 
@@ -135,30 +141,24 @@ h2 {
 
 .redirection {
     position: fixed;
-    width: 130px;
-    height: 130px;
+    width: 120px;
+    height: 120px;
+    min-width: 100px;
+    min-height: 100px;
     top: 5vh;
-    right: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    right: 5vw;
 }
 
 .cross {
     width: 2vw;
 }
 
-.right_cross {
-    position: absolute;
-    left: 35px;
-}
 
-.bottom_cross {
-    position: absolute;
-    bottom: 7px;
-}
-
-.left_cross {
-    position: absolute;
-    right: 130px;
-}
 
 .cross_up:hover {
     width: 18vw;
@@ -189,8 +189,8 @@ h2 {
     transform: translate(-50%, -50%);
     text-align: center;
     font-size: 15px;
-    top: 17px;
-    left: 80px;
+    top: -10px;
+    left: 25px;
     color: white;
     font-family: slkscrb, serif;
 
@@ -207,8 +207,8 @@ h2 {
     transform: translate(-50%, -50%);
     text-align: center;
     font-size: 15px;
-    top: 60px;
-    left: 115px;
+    bottom: 12px;
+    left: 90px;
     color: white;
     font-family: slkscrb, serif;
 
@@ -225,8 +225,8 @@ h2 {
     transform: translate(-50%, -50%);
     text-align: center;
     font-size: 15px;
-    top: 105px;
-    right: 110px;
+    left: 25px;
+    bottom: -20px;
     color: white;
     font-family: slkscrb, serif;
 
@@ -243,8 +243,8 @@ h2 {
     transform: translate(-50%, -50%);
     text-align: center;
     font-size: 15px;
-    top: 60px;
-    right: 115px;
+    bottom: 12px;
+    right: 0px;
     color: white;
     font-family: slkscrb, serif;
 
@@ -252,4 +252,30 @@ h2 {
 
 .four:hover .caption_pres {
     opacity: 1;
+}
+
+.button {
+
+}
+
+.one, .two, .three, .four {
+    position:absolute;
+}
+
+.one {
+    top : 12px;
+}
+
+.two {
+    top: 55px;
+    right: 15px;
+}
+
+.three {
+    bottom : 10px
+}
+
+.four {
+    top: 55px;
+    left: 12px;
 }

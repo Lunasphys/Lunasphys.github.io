@@ -43,6 +43,7 @@ h2 {
 
 .projects_case {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -183,30 +184,24 @@ h2 {
 
 .redirection {
     position: fixed;
-    width: 130px;
-    height: 130px;
+    width: 120px;
+    height: 120px;
+    min-width: 100px;
+    min-height: 100px;
     top: 5vh;
-    right: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    right: 5vw;
 }
 
 .cross {
     width: 2vw;
 }
 
-.right_cross {
-    position: absolute;
-    left: 35px;
-}
 
-.bottom_cross {
-    position: absolute;
-    bottom: 7px;
-}
-
-.left_cross {
-    position: absolute;
-    right: 130px;
-}
 
 .cross_up:hover {
     width: 18vw;
@@ -237,8 +232,8 @@ h2 {
     transform: translate(-50%, -50%);
     text-align: center;
     font-size: 15px;
-    top: 17px;
-    left: 80px;
+    top: -10px;
+    left: 25px;
     color: white;
     font-family: slkscrb, serif;
 
@@ -255,8 +250,8 @@ h2 {
     transform: translate(-50%, -50%);
     text-align: center;
     font-size: 15px;
-    top: 60px;
-    left: 115px;
+    bottom: 12px;
+    left: 90px;
     color: white;
     font-family: slkscrb, serif;
 
@@ -273,8 +268,8 @@ h2 {
     transform: translate(-50%, -50%);
     text-align: center;
     font-size: 15px;
-    top: 105px;
-    right: 110px;
+    left: 25px;
+    bottom: -20px;
     color: white;
     font-family: slkscrb, serif;
 
@@ -291,8 +286,8 @@ h2 {
     transform: translate(-50%, -50%);
     text-align: center;
     font-size: 15px;
-    top: 60px;
-    right: 115px;
+    bottom: 12px;
+    right: 0px;
     color: white;
     font-family: slkscrb, serif;
 
@@ -302,8 +297,28 @@ h2 {
     opacity: 1;
 }
 
-.pres_projet:hover {
-    filter: blur(2px);
-    width: 22.5vh;
-    transition: .3s ease;
+.button {
+
+}
+
+.one, .two, .three, .four {
+    position:absolute;
+}
+
+.one {
+    top : 12px;
+}
+
+.two {
+    top: 55px;
+    right: 15px;
+}
+
+.three {
+    bottom : 10px
+}
+
+.four {
+    top: 55px;
+    left: 12px;
 }
