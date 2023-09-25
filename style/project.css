@@ -182,6 +182,12 @@ h2 {
     width: 32%;
 }
 
+.pres_projet:hover {
+    filter: blur(2px);
+    width: 22.5vh;
+    transition: .3s ease;
+}
+
 .redirection {
     position: fixed;
     width: 120px;
@@ -315,7 +321,7 @@ h2 {
 }
 
 .three {
-    bottom : 10px
+    bottom : 12px
 }
 
 .four {
